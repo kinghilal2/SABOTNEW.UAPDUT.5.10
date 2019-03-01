@@ -205,7 +205,7 @@ ${prefix}clan لعرض اوامر الكلانات
 
 client.on("message", message => {
 	var prefix = "-";
- if (message.content === "=help public") {
+ if (message.content === "-help") {
 	 message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
@@ -240,7 +240,13 @@ client.on("message", message => {
 ❖-support ~ سيرفر الدعم
 ❖-contact ~ ارسال اقتراح او لمراسلة صاحب البوت
 ❖-topinv لعرض اكثر الاعضاء الذين يدعون
-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+لكي ترا اوامر الادمن اكتب
+-help-admin
+لكي ترا اوامر العب
+-help-games
+لكي ترا اوامر الاغاني اكتب
+-help-music
 `)
    message.author.sendEmbed(embed)
     
@@ -249,7 +255,7 @@ client.on("message", message => {
    
    client.on("message", message => {
 	var prefix = "-";
- if (message.content === "=help admin") {
+ if (message.content === "=help-admin") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
@@ -286,7 +292,7 @@ client.on("message", message => {
 
    client.on("message", message => {
 	var prefix = "-";
- if (message.content === "=help games") {
+ if (message.content === "-help-games") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
@@ -311,7 +317,7 @@ client.on("message", message => {
 			  
 client.on("message", message => {
 	var prefix = "-";
- if (message.content === "=help music") {
+ if (message.content === "-help-music") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
